@@ -7,7 +7,7 @@ public extension HTTPRequest {
         if let port {
             components?.port = port
         }
-        if queryItems == queryItems {
+        if queryItems?.isEmpty == false {
             components?.queryItems = queryItems
         }
         
