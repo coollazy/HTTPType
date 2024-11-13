@@ -3,6 +3,9 @@ import Foundation
 public extension HTTPRequest {
     var body: Data? {
         switch contentType {
+        case "text/plain":
+            bodyRawData
+            
         case "application/json":
             jsonBody
             
